@@ -1,0 +1,220 @@
+/* Custom Styles for All in One Events */
+
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.onep{color: rgb(201, 213, 223);
+text-decoration:underline;}
+
+/* Navigation */
+.navbar {
+    background-color: #6c757d; /* Secondary background color */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745 !important;
+}
+
+/* Event Cards */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Form */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles for Various Screen Sizes */
+
+/* For large screens (desktops and laptops) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* For medium screens (tablets, small desktops) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+
+    form button[type="submit"] {
+        font-size: 1.1rem;
+    }
+}
+
+/* For small screens (mobile phones) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    form button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+/* For very small screens (portrait mobile phones) */
+@media (max-width: 480px) {
+    .card img {
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    form button[type="submit"] {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
